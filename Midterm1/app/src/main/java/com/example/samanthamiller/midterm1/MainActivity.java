@@ -34,11 +34,11 @@ public class MainActivity extends ActionBarActivity {
     {
         weather[0] = new WeatherInfo(44.0, 28.0, 42.3, 30.1, 32.6, 27.4, "3/11/15", 0, "Cloudy", 30.1);
         weather[1] = new WeatherInfo(42.7, 30.6, 39.9, 30.0, 31.4, 25.0, "3/12/15", 80, "Rainy", 29.8);
-        weather[2] = new WeatherInfo(45.8, 31.9, 44.6, 33.2, 35.7, 32.3, "3/13/15", 20, "Clear", 32.9);
-        weather[3] = new WeatherInfo(35.5, 33.2, 35.0, 32.7, 33.0, 33.0, "3/14/15", 100, "Rainy", 35.0);
+        weather[2] = new WeatherInfo(45.8, 31.9, 44.6, 33.2, 35.7, 32.3, "3/13/15", 80, "Cloudy", 32.9);
+        weather[3] = new WeatherInfo(35.5, 33.2, 35.0, 32.7, 33.0, 33.0, "3/14/15", 100, "Sunny", 35.0);
         weather[4]  = new WeatherInfo(32.1, 26.3, 31.8, 27.4, 29.4, 31.4, "3/15/15", 70, "Cloudy", 29.1);
-        weather[5]  = new WeatherInfo(29.4, 20.0, 26.1, 28.7, 27.7, 30.8, "3/16/15", 80, "Snowy", 28.2);
-        weather[6]  = new WeatherInfo(80.2, 75.2, 81.1, 76.6, 80.0, 79.3, "3/17/15", 0, "Clear", 33.8); //Summer time!
+        weather[5]  = new WeatherInfo(29.4, 20.0, 26.1, 28.7, 27.7, 30.8, "3/16/15", 20, "Snowy", 28.2);
+        weather[6]  = new WeatherInfo(30.2, 25.2, 31.1, 26.6, 30.0, 29.3, "3/17/15", 10, "Snowy", 33.8); //Summer time!
 
         for(int i = 0; i < 7; i++)
         {
