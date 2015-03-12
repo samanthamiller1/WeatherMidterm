@@ -1,5 +1,6 @@
 package com.example.samanthamiller.midterm1;
 
+import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -32,6 +33,18 @@ public class MainActivity extends ActionBarActivity {
 
     private void listView(String text)
     {
+        AsyncTask<String, Void, String> as = new Forecast().execute(text);
+        String json = null;
+        try
+        {
+            json = as.get();
+        }
+        catch(Exception e)
+        {
+
+        }
+        System.out.println(json);
+
         weather[0] = new WeatherInfo(44.0, 28.0, 42.3, 30.1, 32.6, 27.4, "3/11/15", 0, "Cloudy", 30.1);
         weather[1] = new WeatherInfo(42.7, 30.6, 39.9, 30.0, 31.4, 25.0, "3/12/15", 80, "Rainy", 29.8);
         weather[2] = new WeatherInfo(45.8, 31.9, 44.6, 33.2, 35.7, 32.3, "3/13/15", 80, "Cloudy", 32.9);
